@@ -3,15 +3,28 @@ import streamlit.components.v1 as components
 
 # Customization for heading
 st.title("Get in Touch with Us !")
+header = st.container()
+header.markdown('<style>div[class="css-zt5igj e16nr0p33"] {color:white; text-align:center;font-size:50px; font-family: Lucida Handwriting; margin-bottom:0.001px;  } </style>', unsafe_allow_html=True)
 
-st.markdown('<style>div[class="css-zt5igj e16nr0p33"] {color:white; text-align:center;font-size:50px; font-family: Lucida Handwriting; margin-bottom:0.001px;  } </style>', unsafe_allow_html=True)
+# Customization for the image
+img = st.container()
+
+css=r'''
+#img-div {
+    background: url(https://images.assetsdelivery.com/compings_v2/rondale/rondale1608/rondale160800047.jpg) no-repeat;
+    background-size: 100% 100%;
+    box-shadow: -20px -20px 20px 20px black inset;
+    width: 100%;
+    height: 250px;
+    outline: 2px solid black;
+    outline-offset: -1px;
+    border-radius: 50%/30%;
+}
+'''
+
+img.markdown(f'<style>{css}</style><div id="img-div">&nbsp;</div>', unsafe_allow_html=True)
 
 
-# Customization for image
-st.markdown('<img src="https://images.assetsdelivery.com/compings_v2/rondale/rondale1608/rondale160800047.jpg" alt width="1366" height="250" style="transform:rotate(0deg); filter: blur(3px);"/>', unsafe_allow_html=True)
-
-
-st.markdown('<style>div[class="css-1offfwp e16nr0p34"] {margin-top:-20px;  } </style>', unsafe_allow_html=True)
 
 
 # Customization for sidebar
@@ -185,7 +198,7 @@ text-decoration:none;
 color:#fff;
 display:block;
 position:relative;
-bottom:14px;
+bottom:36px;
 }
 
 
