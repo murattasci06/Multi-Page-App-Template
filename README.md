@@ -1,4 +1,4 @@
-# **Multi-Page-App-Template**
+**Multi-Page-App-Template**
 Template codes that can be used to develop an multi page application with HTML, CSS, Python
 ## Version Informations
 *Streamlit version:* v1.15.2
